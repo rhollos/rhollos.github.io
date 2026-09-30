@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosana Hollos, MSN, AGNP-C | Portfolio</title>
+    
+    <!-- Google Fonts for Elegant Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: #2b2b2b;
+            background-color: #fcfbf9;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Profile Picture Styling */
+        .profile-pic {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top center; /* Focuses on face/shoulders */
+            margin: 0 auto 1.5rem auto;
+            display: block;
+            border: 3px solid #1d4ed8; /* Navy blue ring around photo */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Subtitle style */
+        .tagline {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #7f8c8d;
+            margin-top: 0.75rem;
+            margin-bottom: 1.25rem;
+        }
+
+        /* Contact Details Header Bar */
+        .contact-info {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            color: #555;
+            letter-spacing: 0.5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.6rem;
+            align-items: center;
+        }
+
+        .contact-info a {
+            color: #1d4ed8; /* Navy blue links */
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .contact-info a:hover {
+            color: #1e40af;
+        }
+
+        .contact-info .separator {
+            color: #1d4ed8; /* Blue dot separators */
+        }
+
+        /* Main Heading style */
+        h1 {
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+            color: #1a1a1a;
+            line-height: 1.2;
+        }
+
+        /* Subtitles / Headings inside content */
+        .content h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #1d4ed8; /* Navy blue section headings */
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Decorative thin divider line */
+        .divider {
+            width: 60px;
+            height: 2px;
+            background-color: #1d4ed8; /* Navy blue accent line */
+            margin: 2rem auto;
+        }
+
+        /* Main content area styling */
+        .content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        /* Bullet list styling */
+        .content ul {
+            margin: 1rem 0 1.5rem 1.5rem;
+            list-style-type: disc;
+        }
+
+        .content li {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+
+        .content li strong {
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            color: #999;
+            border-top: 1px solid #eaeaea;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.25rem;
+            }
+            body {
+                font-size: 1.1rem;
+            }
+            .container {
+                padding: 2.5rem 1.5rem;
+            }
+            .contact-info {
+                flex-direction: column;
+                gap: 0.4rem;
+            }
+            .contact-info .separator {
+                display: none;
+            }
+            .content p {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <!-- Updated image tag referencing facepic.JPG -->
+            <img src="facepic.JPG" alt="Rosana Hollos, MSN, AGNP-C" class="profile-pic">
+            
+            <h1>Rosana Hollos, MSN, AGNP-C</h1>
+            <p class="tagline">Adult-Gerontology Primary Care Nurse Practitioner | Quality &amp; Care Management</p>
+            
+            <div class="contact-info">
+                <span>Boca Raton, FL</span>
+                <span class="separator">•</span>
+                <span>(561) 809-0089</span>
+                <span class="separator">•</span>
+                <a href="mailto:rhollos@outlook.com">rhollos@outlook.com</a>
+                <span class="separator">•</span>
+                <a href="https://www.linkedin.com/in/rosana-h-152a05214" target="_blank" rel="noopener">LinkedIn Profile</a>
+            </div>
+
+            <div class="divider"></div>
+        </header>
+
+        <main class="content">
+            <h2>Professional Summary</h2>
+            <p>
+                Board-Certified Adult-Gerontology Primary Care Nurse Practitioner (AGNP-C) with 10+ years of healthcare experience across post-acute care, care coordination, and public health. Proven track record integrating primary clinical practice with clinical documentation auditing, quality improvement, and regulatory compliance. Skilled in executing value-based care management models including PCM, CCM, BHI, and TCM to improve care continuity, prevent readmissions, and deliver high-standard adult and geriatric care. Multilingual communicator adept at bridging care gaps across culturally diverse patient populations.
+            </p>
+
+            <h2>Core Areas of Expertise</h2>
+            <ul>
+                <li><strong>Care Management:</strong> Principal (PCM), Chronic (CCM), Behavioral Health (BHI), and Transitional Care Management (TCM).</li>
+                <li><strong>Clinical Auditing:</strong> Clinical documentation improvement (CDI), chart auditing, and CMS/AHCA regulatory compliance.</li>
+                <li><strong>Care Transitions:</strong> Post-acute discharge navigation, multidisciplinary handoffs, and medication continuity.</li>
+                <li><strong>Practice Settings:</strong> Sub-acute rehabilitation, skilled nursing facilities (SNF), long-term care (LTC), and public health.</li>
+            </ul>
+
+            <h2>Key Value &amp; Impact</h2>
+            <ul>
+                <li><strong>Care Coordination:</strong> Spearheaded PCM, CCM, and TCM workflows for complex adult and geriatric caseloads to eliminate care gaps and minimize avoidable 30-day readmissions.</li>
+                <li><strong>Documentation &amp; Audit:</strong> Performed targeted chart reviews across post-acute settings to align provider documentation, resolve diagnostic coding discrepancies, and ensure audit readiness.</li>
+                <li><strong>Facility &amp; Post-Acute Oversight:</strong> Coordinated multidisciplinary care across SNF sub-acute and LTC units, driving adherence to safety guidelines and personalized care plans.</li>
+                <li><strong>Cross-Cultural Care Delivery:</strong> Leveraged multilingual fluency to enhance clinical communication, discharge understanding, and patient compliance across diverse communities.</li>
+            </ul>
+
+            <h2>Credentials &amp; Technical Skills</h2>
+            <ul>
+                <li><strong>Credentials:</strong> AGNP-C (AANP) • MSN • St. Thomas University</li>
+                <li><strong>Languages:</strong> English, Spanish, Italian, Portuguese, Hungarian</li>
+                <li><strong>Systems:</strong> PointClickCare, Epic, Athenahealth, eClinicalWorks, CDI tracking workflows</li>
+            </ul>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Rosana Hollos. ALL RIGHTS RESERVED.</p>
+    </footer>
+
