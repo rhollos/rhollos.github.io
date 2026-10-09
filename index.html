@@ -231,46 +231,81 @@
             </ul>
         </main>
     </div>
-    <style>
-  /* 1. Make the main layout wider */
-  .container, main {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-  }
+<style>
+    /* 1. Make the main container wider */
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
 
-  /* 2. Expand the contact form box */
-  form {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-  }
+    /* 2. Expand the contact section card */
+    #contact {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
 
-  /* 3. Make input boxes larger and easier to read */
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    font-size: 1.1rem;      /* Bigger text when typing */
-    padding: 0.85rem 1rem;  /* Taller, roomier boxes */
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-  }
+    #contact h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-family: 'Montserrat', sans-serif;
+      color: #1d4ed8;
+    }
 
-  /* 4. Format form labels */
-  label {
-    font-size: 1rem;
-    font-weight: 600;
-    display: block;
-  }
-</style>
-<section id="contact" style="max-width: 600px; margin: 40px auto; padding: 25px; box-sizing: border-box; background-color: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0;">
-    <h2 style="margin-top: 0; margin-bottom: 20px;">Contact Me</h2>
-    
+    /* 3. Form input and textarea layout */
+    .form-group {
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .form-group label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #2b2b2b;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      font-family: inherit;
+      font-size: 1.1rem;      /* Larger, legible typing size */
+      padding: 0.85rem 1rem;  /* Spacious input boxes */
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    button[type="submit"] {
+      padding: 12px 28px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      background-color: #1d4ed8;
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: background-color 0.2s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #1e40af;
+    }
+  </style>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+
     <form action="https://formsubmit.co/rhollos@outlook.com" method="POST">
       <!-- Hidden configuration options -->
       <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission!">
@@ -278,24 +313,26 @@
       <input type="hidden" name="_template" value="table">
 
       <!-- Form fields -->
-      <div style=<main style="max-width: 600px;">
-        <label for="name" style="font-weight: 600;">Name</label><br>
-        <input type="text" id="name" name= required style="width: 100%; padding: 10px; margin-top: 6px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
       </div>
 
-      <div style=<main style="max-width: 600px;">
-        <label for="email" style="font-weight: 600;">Email</label><br>
-        <input type="email" id="email" name="email"  required style="width: 100%; padding: 10px; margin-top: 6px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
       </div>
 
-      <div style=<main style="max-width: 600px;">
-        <label for="message" style="font-weight: 600;">Message</label><br>
-        <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; margin-top: 6px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; resize: vertical;"></textarea>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
       </div>
 
-      <button type="submit" style="padding: 12px 24px; cursor: pointer; border: none; border-radius: 4px; background-color: #0066cc; color: #ffffff; font-weight: bold;">Send Message</button>
+      <button type="submit">Send Message</button>
     </form>
   </section>
-    <footer>
-        <p>&copy; 2026 Rosana Hollos. ALL RIGHTS RESERVED.</p>
-    </footer>
+
+  <footer>
+    <p>&copy; 2026 Rosana Hollos. ALL RIGHTS RESERVED.</
+    
+  
