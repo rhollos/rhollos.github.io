@@ -241,15 +241,44 @@
     }
 
     /* 2. Expand the contact section card */
-    #contact {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 30px;
-      background-color: #ffffff;
-      border-radius: 8px;
-      border: 1px solid #e2e8f0;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    }
+   #contact {
+width: 100%;
+max-width: 800px;
+margin: 40px auto;
+padding: 32px;
+background-color: #ffffff;
+border-radius: 8px;
+border: 1px solid #e2e8f0;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+box-sizing: border-box;
+}
+
+#contact form {
+width: 100%;
+box-sizing: border-box;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+width: 100%;
+padding: 12px 14px;
+margin-top: 6px;
+margin-bottom: 16px;
+border: 1px solid #cbd5e1;
+border-radius: 6px;
+box-sizing: border-box;
+font-size: 1rem;
+}
+
+#contact button,
+#contact input[type="submit"] {
+width: 100%;
+padding: 12px;
+border-radius: 6px;
+cursor: pointer;
+}
+
 
     #contact h2 {
       margin-top: 0;
